@@ -9,5 +9,5 @@ chrome_options.add_experimental_option("detach", True)
 service = Service(web_driver_manager.install())
 driver = Chrome(service=service, options=chrome_options)
 
-driver.get("https://www.instagram.com/")
+driver.get("")
 driver.maximize_window()

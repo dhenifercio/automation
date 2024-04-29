@@ -13,14 +13,14 @@ servico = Service(ChromeDriverManager().install())
 
 navegador = webdriver.Chrome(service=servico,options=chrome_options)
 
-navegador.get("https://www.linkedin.com/in/bruno-m-15277430/")
+navegador.get()
 
 class Leads:
     def __init__(self, name):
       self.name = name.text
       self.position = 0
       self.company = 0
-      
+
     def positions(self, position):
         self.position = position.text
 
